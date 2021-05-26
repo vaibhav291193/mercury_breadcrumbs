@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+body{
+  margin: 0;
+  padding: 0;
+}
+.ds-container {
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+.example-container {
+  margin: 0 auto;
+  padding: 10px;
+}
+
+h1 {
+  font-family: Roboto;
+  font-size: 36px;
+}
+
+/* Breadcrumbs Class */
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.ds-breadcrumb {
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: 0.5px;
+  color: #111111;
+}
+
+@media only screen and (max-width: 40em) {
+  .ds-breadcrumb{
+    display: none;
+  }
+}
+
+.ds-breadcrumb ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  
+}
+.ds-breadcrumb ul li {
+  padding: 0;
+  display: inline;
+  line-height: 1.5rem;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  margin-right: 6px;
+  display: inline-block;
+}
+
+.ds-breadcrumb ul li:after {
+  content: url('chevron-right.svg');
+  position: relative;
+  padding-left: 10px;
+  top: 3px;
+}
+
+.ds-breadcrumb ul li:last-child:after{
+  content: "";
+  padding-left: 0px;
+}
+
+.ds-breadcrumb ul li:last-child{
+  margin-right: 0px;
+}
+
+
+.ds-breadcrumb ul a {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  color: #0467c6;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 1px;
+}
+
+.ds-breadcrumb ul a:hover {
+  text-decoration: underline;
+}
+
+.ds-breadcrumb ul li:last-child a, .ds-breadcrumb ul li:last-child a:hover, .ds-breadcrumb ul li:last-child a:focus{
+  color: #111111;
+  pointer-events: none;
+  text-decoration: none;
+  outline: none;
+  box-shadow: 0 0 0 0px #fff, 0 0 0 0px #0467c6 !important;
+}
+
+.ds-breadcrumb ul a:focus {
+  box-shadow: 0 0 0 1px #fff, 0 0 0 2px #0467c6;
+  text-decoration: underline;
+  outline: none;  
+}
+
+.ds-breadcrumb ul a.by-keyboard:focus {
+  box-shadow: 0 0 0 0px #fff, 0 0 0 0px #0467c6 !important;
+}
